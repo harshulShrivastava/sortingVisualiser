@@ -32,7 +32,7 @@ class Sorting {
                         newArray[j]=temp;
                      
                       indices.push([i,j,true]);
-          // await this.switchPlaces(i, j); 
+         
             
                         }
                           if(j==len-1)indices.push([j,i,'notSwap']);
@@ -169,7 +169,6 @@ this.applyChanges(indices);
         const distanceBetweenDivs = index2 - index1;
         const distance = $(clickedDiv).outerHeight() * distanceBetweenDivs+10 ;
 
-       // if (otherDiv.length) {
        
             this.animating = true;
             clickedDiv.css('background', '#7da9f0');
@@ -195,7 +194,7 @@ this.applyChanges(indices);
                 }
             });
         }   
-  //  }
+   }
    highLight(index1,index2)
     {
   this.clearr();
@@ -255,9 +254,6 @@ if(hex!='#0800')$($('.moveUp')[x]).css('background-color', 'white');
         
     }
 }
-//TODO:
-//padaryt, kad reversint butu galima
-//matuot laika
 const sorting = new Sorting();
 sorting.setWidthByValue();
 var t=10;
@@ -278,7 +274,6 @@ const generateNumbers = () => {
     sorting.sorted = false;
     sorting.setWidthByValue();
 }
-
 $("#bubble-sort").on('click', ()=>{
     $("#title").html("Bubble Sort");
 });
@@ -292,9 +287,6 @@ $("#linear-sort").on('click', ()=>{
 $("#quick-sort").on('click', ()=>{
     $("#title").html("Quick Sort");
 });
-
-
-
 const start = () => {
     switch($("#title").text()){
         case "Linear Sort":
