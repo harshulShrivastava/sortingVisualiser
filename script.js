@@ -223,7 +223,7 @@ if(hex!='#0800')$($('.moveUp')[x]).css('background-color', 'white');
  x++;
      }
     
-    }
+    
     applyChanges(indices){
     indices.push([-1,-1,false]);
         var count = 0;
