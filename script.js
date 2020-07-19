@@ -222,7 +222,7 @@ var hex = '#'+ Number(rgb[0]).toString(16) + Number(rgb[1]).toString(16) + Numbe
 if(hex!='#0800')$($('.moveUp')[x]).css('background-color', 'white');
  x++;
      }
-    
+    }
     
     applyChanges(indices){
     indices.push([-1,-1,false]);
