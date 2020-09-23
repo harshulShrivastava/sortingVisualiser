@@ -1,1 +1,1 @@
-# SortingVisualizer
+# Sortingvisualizer
